@@ -40,7 +40,60 @@ output += i+"";
 showResult("Factor of: " +num+ " is:" +output);
 }  
 
+function reverse(){
+    num=getUserInput();
+    var rev = 0;
+    while(num != 0){
+        r = num % 10;
+        
+    rev = (rev * 10) + r;
+     num = Math.floor(num / 10);
+    
+}
+showResult("Reverse of number:" +rev);        
+}
 
+
+
+
+
+function palindrome(){
+    num=getUserInput();
+    var rev = 0;
+    var num1 = num;
+    while(num != 0){
+        r =  num % 10;
+    rev= (rev * 10) + r;
+    num = Math.floor(num / 10);
+}
+if(num1 == rev)   
+showResult("palindrome number:" +num1);
+    else
+showResult("not a palindrome:" +num1);
+}
+
+
+function sumofdigits(){
+    num=getUserInput();
+    var sum = 0;
+     while(num!=0){
+         sum += (num%10);
+         num=Math.floor(num/10);
+     }
+    
+   showResult("Sum of number:" +sum);   
+}
+
+
+function sumgetssingle(){
+    num = getUserInput();
+   var sum = num;
+    while(num > 9){
+    sum = Math.floor(num / 10) + (num % 10);
+    num = sum;
+    }
+    showResult("Sum =" +sum);
+}
 
 
 function fibonancci(){

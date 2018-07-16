@@ -85,7 +85,3 @@ for(var i = 0; i < 3; i++){
 
 
 
-/*
-Exception: SyntaxError: unexpected token: identifier
-@Scratchpad/1:74
-*/
